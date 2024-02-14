@@ -1,0 +1,10 @@
+.page {
+  padding: 0;
+  margin: 0 auto;
+  width: 393px;
+  max-width: 1000px;
+  height: 852px;
+  position: relative;
+  border-radius: 24px;
+  background: blue;
+}
