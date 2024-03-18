@@ -1,16 +1,10 @@
-import React from "react";
-import Page from "./page";
-import STATUS_BAR from "./component/status_bar";
-import Money from "./component/money";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import "./App.css";
+import WelcomePage from "./page/welcome";
 
 function App() {
-  return (
-    <Page>
-      <STATUS_BAR />
-      <Money />
-    </Page>
-  );
-  //   return (
+  return <WelcomePage>Hello</WelcomePage>;
+  // return (
   //     <AuthContext.Provider value={authContextData}>
   //       <BrowserRouter>
   //         <Routes>

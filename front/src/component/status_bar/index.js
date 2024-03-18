@@ -1,8 +1,8 @@
 import "./index.css";
 import React, { useState, useEffect } from "react";
-import cellImage from "./media/cell.svg";
-import wifiImage from "./media/wifi.svg";
-import batImage from "./media/bat.svg";
+import cellImage from "../../component/media/cell.svg";
+import wifiImage from "../../component/media/wifi.svg";
+import batImage from "../../component/media/bat.svg";
 
 export default function STATUS_BAR() {
   const [currentTime, setCurrentTime] = useState("");

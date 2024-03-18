@@ -8,4 +8,10 @@
   position: absolute;
   top: 18px;
   width: 340px;
+  font-weight: bold;
+}
+
+span {
+  display: flex;
+  gap: 7px;
 }
