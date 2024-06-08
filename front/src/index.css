@@ -5,11 +5,4 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  max-width: 420px;
-  width: 100%;
-  margin: 0 auto;
-  height: 100%;
-  display: flex;
-  background-color: black;
 }

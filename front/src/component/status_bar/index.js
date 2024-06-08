@@ -4,28 +4,31 @@ import cellImage from "../../component/media/cell.svg";
 import wifiImage from "../../component/media/wifi.svg";
 import batImage from "../../component/media/bat.svg";
 
-export default function STATUS_BAR() {
-  const [currentTime, setCurrentTime] = useState("");
+export default function StatusBar() {
+  const [currentTime, setCurrentTime] = useState(new Date());
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      const date = new Date();
-      const hours = date.getHours().toString().padStart(2, "0");
-      const minutes = date.getMinutes().toString().padStart(2, "0");
-      setCurrentTime(`${hours}:${minutes}`);
+    const intervalId = setInterval(() => {
+      setCurrentTime(new Date());
     }, 1000);
 
-    return () => clearInterval(interval);
+    return () => clearInterval(intervalId);
   }, []);
 
+  const getCurrentTime = () => {
+    const hours = currentTime.getHours().toString().padStart(2, "0");
+    const minutes = currentTime.getMinutes().toString().padStart(2, "0");
+    return `${hours}:${minutes}`;
+  };
+
   return (
-    <header className="status_bar">
-      <div>{currentTime}</div>
+    <div className="statusbar">
+      {getCurrentTime()}
       <span>
-        <img src={cellImage} alt="Cellular icon" />
-        <img src={wifiImage} alt="Wi-Fi icon" />
-        <img src={batImage} alt="Battery icon" />
+        <img src={cellImage} alt="icon" />
+        <img src={wifiImage} alt="icon" />
+        <img src={batImage} alt="icon" />
       </span>
-    </header>
+    </div>
   );
 }

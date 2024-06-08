@@ -1,13 +1,12 @@
-.status_bar {
-  color: #000;
+.statusbar {
   display: flex;
-  font-size: 17px;
-  font-weight: 700;
+  width: 340px;
   justify-content: space-between;
-  left: 27px;
   position: absolute;
   top: 18px;
-  width: 340px;
+  left: 27px;
+  font-size: 17px;
+  color: #000;
   font-weight: bold;
 }
 

@@ -3,7 +3,7 @@
   height: 601.536px;
 
   flex-shrink: 0;
-  background: url("../../../public/pictures/money.png"),
+  background: url("../../../component/media/money.png"),
     transparent 50% / cover no-repeat;
 
   position: absolute;
@@ -22,7 +22,7 @@
 
 .mesh {
   opacity: 0.75;
-  background: url("../../../public/pictures/fone.png"),
+  background: url("../../../component/media/mesh.png"),
     lightgray 50% / cover no-repeat;
   mix-blend-mode: overlay;
   width: 393px;

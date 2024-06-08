@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Home from "../../component/home";
+import Home from "../../../component/home";
 import "./index.css";
-import Button from "../../component/button";
+import Button from "../../../component/button";
 
-const WelcomePage = () => {
+const WellcomePage = () => {
   return (
     <Home>
       <div className="money"></div>
@@ -15,11 +15,11 @@ const WelcomePage = () => {
       <p>Welcome to Bank App</p>
 
       <div className="buttons">
-        <Link className="linkstyle">
+        <Link className="linkstyle" to="/signup">
           <Button>Sign Up</Button>
         </Link>
 
-        <Link className="linkstyle">
+        <Link className="linkstyle" to="/signin">
           <Button type="button-white">Sign In</Button>
         </Link>
       </div>
@@ -27,4 +27,4 @@ const WelcomePage = () => {
   );
 };
 
-export default WelcomePage;
+export default WellcomePage;
